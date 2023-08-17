@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --bgcolor:#ccc;
+    --linkcolor:#1123ff;
+
+
+}
+
+.container{
+    margin: 0.3rem auto;
+    background-color: var(--bgcolor);
+    max-width: 99%;
+}
+
+img{
+    max-width: 100%;
+}
+
+.highlight{
+    height: 25rem;
+    width: 100%;
+    
+    background: linear-gradient(rgba(15, 15, 15, 0.493),rgba(44, 104, 54, 0.4)), url(./2ndImage/second_shoes-removebg-preview.png) center/cover fixed no-repeat;
+    line-height: 1.1;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 0 4rem;
+   row-gap: 1.5rem;
+      
+
+}
+
+.highlight p{
+    text-align: center;
+    color: var(--bgcolor);
+}
+.highlight h1{
+    color: var(--bgcolor);
+    font-size: 2.8rem;
+}
+
+span{display: inline-block;
+    text-align: center;
+    margin-left: 3rem;
+    margin-bottom: 0.8rem;
+}
+
+h2{
+   text-align: center;
+}
+
+span{
+    display: block;
+text-align: center;
+}
+.btn2{
+    display: block;
+    height: 1.5rem;
+    position: relative;
+    top: 50px;
+    left:-250px;
+    text-decoration: none;
+    text-align: center;
+    
+
+}
+
+img{
+    max-width: 100%;
+}
+ .btn{
+    display: block;
+    background-color: var(--linkcolor);
+    color:#ccc;
+    padding: 0.5rem;
+  height: 2.5rem;
+    text-decoration: none;
+    width: 8rem;
+    text-align: center;
+    border-radius: 10px;
+    transition: all ease-in-out 110ms;
+}
+.highlight .btn:hover{
+    letter-spacing: 4px;
+    transform: scale(0.9);
+}
+
+.split{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: 20%;
+    justify-content: center;
+    align-items: baseline;
+    gap: 20px;
+
+}
+.featured_product{
+height: 300px;
+width: 300px;
+display: block;
+position: relative;
+transform: scale(0.9);
+transition: all ease-in-out 250ms;
+}
+
+.featured_product:hover,.featured_product:focus{
+    transform: scale(1);
+}
+
+.featured_product::after{
+    content: "";
+    padding: 45% 45% 0 0;
+    background-color: var(--linkcolor);
+    position: absolute;
+    border-radius: 50%;
+    top: 0px;
+    left: 80px;
+    z-index:-1 ;
+
+    
+}
+

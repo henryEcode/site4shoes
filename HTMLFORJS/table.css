@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,400&display=swap');
+
+*{
+
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    --bgcolor:#1e1e1e;
+    --size:1.2rem;
+    --bggcolor:azure;
+    --fontfamily:'Lato', sans-serif;
+
+}
+
+/* font-family: 'Lato', sans-serif; */
+
+table{
+    margin: 0 auto;
+}
+
+th,td{
+    width: 200px;
+    text-align: center;
+    border: 1px solid #1e1e1e;
+    font-family: var(--fontfamily);
+}
+
+tr{
+    border-bottom: 1px solid #1e1e1e;
+}
+
+.menu{
+background-color: azure;
+height: Auto;
+width: 90%;
+margin:50px Auto;
+padding: 0 ;
+
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: inherit;
+}
+
+ul li{
+    display:inline-block;
+    border-right: 1px solid #1e1e1e;
+    width: 18%;
+}
+ul li:last-child{
+    border-right: none;
+}
+
+ul li a{
+    display: block;
+    text-decoration: none;
+    color: var(--bgcolor);
+}
+ul li ul li{
+display: none;
+}
+ul li:hover ul{
+   display: block;
+   width: 16%;
+   position: absolute;
+   background:linear-gradient(rgba(0,100,0,0.5),rgba(0,50,0,0.5));
+   margin-left:-20px ;
+   text-align: center;
+}
+
+ul li:hover ul li{
+    display: block;
+    margin-top: 10px;
+ 
+    border-right: none;
+   padding:0 30px; 
+    
+}
+
+
+    
+}
